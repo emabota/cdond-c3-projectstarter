@@ -27,3 +27,8 @@ jobs:
             npm run build
             exit 1
 
+workflows:
+  default:
+    jobs:
+      - build-frontend
+      - build-backend
