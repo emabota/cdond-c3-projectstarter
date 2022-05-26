@@ -60,7 +60,7 @@ jobs:
           name: Scan frontend build
           command: |
             cd frontend
-            npm audit fix --audit-level=critical --force
+            npm audit fix --audit-level=critical
             npm audit --audit-level=critical
 
   scan-backend:
@@ -72,7 +72,7 @@ jobs:
           name: Scan backend build
           command: |
             cd backend
-            npm audit fix --audit-level=critical --force
+            npm audit fix --audit-level=critical
             npm audit --audit-level=critical
 
 workflows:
